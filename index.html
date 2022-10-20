@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/teste.css">
+    <title>Codificação </title>
+</head>
+<body>
+
+   <nav>
+     <h1>Codificação de texto para Cifra de Cesar e Base 64</h1>
+   </nav> 
+
+<main>
+    
+ <section>
+  <form class="container-input">
+    <label for="escolherDecodificacao">Selecione o tipo de criptografia:</label>
+    <br>
+    <select id="escolherDecodificacao">
+        <option class="testei" value="optCifra">Cifra de César</option>
+        <option class="testei" selected value="optBase64">Base64</option>
+    </select>
+</div>
+<div class="buttonsRa">
+    <div>
+        
+        <label for="radio1">Codificar</label>
+        <input checked type="radio" value="radio1" name="teste" class="radioGeral" id="radio1">
+       
+    </div>
+    
+    <div>
+        
+        <label for="radio2">Decodificar</label>
+        <input type="radio" name="teste" value="radio2" class="radioGeral" id="radio2">
+    </div>
+</div>
+<div>
+    
+    <label id="inputTextoTitulo" for="inputTexto">Texto que será codificado:</label>
+    <br>
+    <textarea  class="boxTexto" type="text" id="inputTexto"></textarea>
+</div>
+<br>
+<div  id="Container">
+    <label for="inputBase">Digite o valor de deslocamento:</label>
+    <br>
+    <input class="input-resul" type="number" min="0" maxlength="2" placeholder="1-25" id="inputBase">
+</div>
+<br>
+<div>
+    <input  class="buttonSub" type="button" value="Confirmar" id="btn">
+</div>
+
+<div class="containerResul">
+    <br>
+    <textarea readonly class="resultado"> Resultado</textarea>
+</div>
+
+
+  </form>
+
+
+
+ </section>
+
+    <button class="explicaCesar" id="buttonModal">Explicação sobre a Cifra de Cesar</button>
+
+  <section>
+    <div class="diabox">
+    <dialog  id="diaCifra" >
+     
+         <h1 >Cifra de Cesar </h1>
+        <p>
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, quaerat? Porro, animi dolore vero officia, id vitae eos similique, voluptatibus quibusdam excepturi omnis maxime beatae aspernatur aliquam sapiente esse nam.
+
+        </p>
+         <br><br><br>
+        <button  class="buttonDia" id="fecharModal">Fechar</button>
+
+    </dialog>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+
+</footer>
+
+ <script src="/scripts/main.js">
+
+    </script>
+</body>
+</html>
